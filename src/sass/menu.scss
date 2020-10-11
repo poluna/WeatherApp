@@ -1,0 +1,16 @@
+#menu {
+  background-color: rgb(56, 56, 56);
+  color: rgb(240, 240, 240);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  .main {
+    font-weight: 500;
+    border-bottom: rgb(88, 163, 182) 2px solid;
+  }
+  ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+}
