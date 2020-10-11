@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap);
+#menu {
+  background-color: #383838;
+  color: #f0f0f0;
+  padding: 10px;
+  position: fixed;
+  width: 100%; }
+  #menu .main {
+    font-weight: 500;
+    border-bottom: #58a3b6 2px solid; }
+  #menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none; }
+
+#currentWeather {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  #currentWeather .seeMore {
+    position: absolute;
+    bottom: 6px;
+    font-size: 1em; }
+  #currentWeather .temperature {
+    font-size: 4em; }
+  #currentWeather .description {
+    font-size: 3em; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; }
+
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover; }
+

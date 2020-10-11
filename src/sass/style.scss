@@ -1,6 +1,18 @@
+@import "menu";
+@import "currentWeather";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  background-image: url("../img/background.jpg");
+  background-position: center;
+  background-size: cover;
 }
