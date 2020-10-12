@@ -1,0 +1,19 @@
+#detailsPanel {
+    background-color: rgba(122, 122, 122, 0.4);
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 5px;
+    // position: absolute;
+    // bottom: 30px;
+    display: flex;
+
+    div {
+        margin: 15px;
+        text-align: center;
+        font-size: 0.8em;
+        p {
+            padding-top: 10px;
+            font-size: 2em;
+        }
+    }
+}
