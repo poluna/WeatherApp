@@ -8,8 +8,13 @@ class ForecastItem {
   render(node) {
     const nodeHtml = node.innerHTML;
     node.innerHTML = `
-        ${nodeHtml}
-        <h4>ForecastItem</h4>    
+        ${nodeHtml}  
+        <div class="forecastItem">
+          <h4>ForecastItem</h4>
+          Temperature: <p class="temperature">- °C</p>
+          Description: <p class="description">-</p>
+          Wind: <p class="wind">- m/s</p>
+        </div>    
     `;
   }
 }
