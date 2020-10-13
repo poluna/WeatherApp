@@ -8,10 +8,11 @@ const menu = new Menu("menu");
 const currentWeather = new CurrentWeather("currentWeather");
 const forecast = new Forecast("forecast");
 const { setWeather } = CurrentWeather;
+const { setForecast } = Forecast;
 
 window.onload = () => {
   menu.render();
   currentWeather.render();
   forecast.render();
-  Api.getWeather(setWeather);
+  Api.getWeather(setWeather, setForecast);
 };
