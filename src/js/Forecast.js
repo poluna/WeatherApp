@@ -8,21 +8,25 @@ class Forecast {
     this.day2 = new ForecastItem("day2");
     this.day3 = new ForecastItem("day3");
     this.day4 = new ForecastItem("day4");
+    this.day5 = new ForecastItem("day5");
   }
 
   static setForecast(data) {
     const dt = 8;
-    for (let i = 0; i < 4; i++) {
-      document.querySelector(
-        `#day${i + 1} img`
-      ).src = `./img/icons/${data.list[i * dt].weather[0].icon}.png`;
+    for (let i = 0; i < 5; i++) {
+      document.querySelector(`#day${i + 1} h4`).innerHTML = `${
+        data.list[i * dt].dt_txt.split(" ")[0]
+      }`;
+      document.querySelector(`#day${i + 1} img`).src = `./img/icons/${
+        data.list[i * dt].weather[0].icon
+      }.png`;
       document.querySelector(
         `#day${i + 1} .temperature`
       ).innerHTML = `${Math.round(data.list[i * dt].main.temp)}°C`;
       document.querySelector(`#day${i + 1} .description`).innerHTML = `${
         data.list[i * dt].weather[0].description
       }`;
-      document.querySelector(`#day${i + 1} .wind`).innerHTML = `${Math.round(
+      document.querySelector(`#day${i + 1} .wind`).innerHTML = `wind: ${Math.round(
         data.list[i * dt].wind.speed
       )} m/s`;
     }
@@ -39,6 +43,7 @@ class Forecast {
     this.day2.render(days);
     this.day3.render(days);
     this.day4.render(days);
+    this.day5.render(days);
   }
 }
 

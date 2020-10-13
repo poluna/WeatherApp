@@ -1,14 +1,19 @@
 #forecast {
-  background-color: rgba(71, 71, 71, 0.8);
+  background-color: rgba(28, 74, 85, 0.8);
   text-align: center;
-  margin-top: 100px;
+  margin: 100px 0 200px 0;
+  padding-bottom: 70px;
   h1 {
     font-size: 2em;
-    padding: 20px;
+    padding: 40px;
+    color: rgb(245,245,245);
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
   }
   .days {
     display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }

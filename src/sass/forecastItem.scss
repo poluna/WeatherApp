@@ -1,4 +1,19 @@
 .forecastItem {
-    background-color: rgb(238, 238, 238);
-    padding: 15px;
+  background-color: rgb(238, 238, 238);
+  padding: 15px;
+    max-width: 200px;
+  // flex-basis: 100%;
+  flex: 1 1 0;
+  margin: 5px;
+  img {
+    max-width: 5em;
+  }
+  .temperature {
+    font-size: 2.5em;
+    padding: 5px;
+  }
+  .description {
+    font-size: 1.1em;
+    padding: 20px;
+  }
 }

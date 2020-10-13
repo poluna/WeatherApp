@@ -10,11 +10,11 @@ class ForecastItem {
     node.innerHTML = `
         ${nodeHtml}  
         <div class="forecastItem" id=${this.element.id}>
-          <h4>ForecastItem</h4>
+          <h4>-</h4>
           <img src="./img/icons/unknown.png"/>
-          Temperature: <p class="temperature">- °C</p>
-          Description: <p class="description">-</p>
-          Wind: <p class="wind">- m/s</p>
+          <p class="temperature">- °C</p>
+          <p class="description">-</p>
+          <p class="wind">- m/s</p>
         </div>    
     `;
   }
