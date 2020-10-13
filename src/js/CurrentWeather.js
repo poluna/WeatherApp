@@ -8,6 +8,7 @@ class CurrentWeather {
   }
 
   static setWeather(data) {
+    document.querySelector("#currentWeather img").src = `./img/icons/${data.weather[0].icon}.png`;
     document.querySelector(".temperature").innerHTML = `${Math.floor(
       data.main.temp
     )}°C`;
@@ -26,7 +27,7 @@ class CurrentWeather {
 
   render() {
     this.element.innerHTML = `
-            <h1>Current Weather</h1>
+            <img src="./img/icons/unknown.png"/>
             <h2 class="temperature">- °C</h2>
             <h2 class="description">-</h2>
             <h3 class="location">-</h3>
