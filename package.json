@@ -3,9 +3,11 @@
   "author": "",
   "main": "js/main.js",
   "license": "MIT",
+  "homepage": "https://poluna.github.io/weatherapp",
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "build": "webpack --mode production --watch"
+    "build": "webpack --mode production --watch",
+    "deploy": "gh-pages -d dist"
   },
   "resolutions": {
     "terser": "3.14.1"
@@ -35,6 +37,7 @@
     "whatwg-fetch": "2.0.4"
   },
   "dependencies": {
+    "gh-pages": "^3.1.0",
     "requirejs": "^2.3.6"
   }
 }
