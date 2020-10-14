@@ -1,6 +1,5 @@
 #menu {
   background-color: rgb(56, 56, 56);
-  color: rgb(240, 240, 240);
   padding: 10px;
   position: fixed;
   z-index: 1;
@@ -11,7 +10,13 @@
   }
   ul {
     display: flex;
-    gap: 20px;
     list-style: none;
+  }
+  li {
+    margin-right: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(240, 240, 240);
   }
 }

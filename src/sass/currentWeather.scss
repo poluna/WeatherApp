@@ -12,6 +12,7 @@
     font-size: 1em;
     text-decoration: none;
     color: rgb(240, 240, 240);
+    animation: color-change 7s infinite;
   }
 
   .temperature {
@@ -26,5 +27,17 @@
 
   .location {
     font-weight: 500;
+  }
+
+  @keyframes color-change {
+    0% {
+      color:rgb(240, 240, 240);
+    }
+    50% {
+      color: rgb(119, 119, 119);
+    }
+    100% {
+      color: rgb(240, 240, 240);
+    }
   }
 }
