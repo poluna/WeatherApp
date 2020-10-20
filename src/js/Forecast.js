@@ -12,23 +12,31 @@ class Forecast {
   }
 
   static setForecast(data) {
+    let startDay = 0;
+    for (let i = 0; i < data.list.length; i++) {
+      if (data.list[i].dt_txt.split(" ")[1] === "12:00:00") {
+        startDay = i;
+        break;
+      }
+    }
     const dt = 8;
     for (let i = 0; i < 5; i++) {
+      let num = startDay + i * dt;
       document.querySelector(`#day${i + 1} h4`).innerHTML = `${
-        data.list[i * dt].dt_txt.split(" ")[0]
+        data.list[num].dt_txt.split(" ")[0]
       }`;
-      document.querySelector(`#day${i + 1} img`).src = `./img/icons/${
-        data.list[i * dt].weather[0].icon
-      }.png`;
+      document.querySelector(
+        `#day${i + 1} img`
+      ).src = `./img/icons/${data.list[num].weather[0].icon}.png`;
       document.querySelector(
         `#day${i + 1} .temperature`
-      ).innerHTML = `${Math.round(data.list[i * dt].main.temp)}°C`;
-      document.querySelector(`#day${i + 1} .description`).innerHTML = `${
-        data.list[i * dt].weather[0].description
-      }`;
-      document.querySelector(`#day${i + 1} .wind`).innerHTML = `wind: ${Math.round(
-        data.list[i * dt].wind.speed
-      )} m/s`;
+      ).innerHTML = `${Math.round(data.list[num].main.temp)}°C`;
+      document.querySelector(
+        `#day${i + 1} .description`
+      ).innerHTML = `${data.list[num].weather[0].description}`;
+      document.querySelector(
+        `#day${i + 1} .wind`
+      ).innerHTML = `wind: ${Math.round(data.list[num].wind.speed)} m/s`;
     }
   }
 
