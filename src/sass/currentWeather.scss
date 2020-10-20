@@ -1,11 +1,14 @@
 #currentWeather {
   display: flex;
-  height: 100vh;
+  // height: 100vh;
+  height: 92vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-
+  img {
+    width: 130px;
+  }
   a {
     position: absolute;
     bottom: 6px;
@@ -14,24 +17,21 @@
     color: rgb(240, 240, 240);
     animation: color-change 7s infinite;
   }
-
   .temperature {
     font-size: 4em;
     padding: 5px;
   }
-
   .description {
     font-size: 2em;
     padding: 15px;
   }
-
   .location {
     font-weight: 500;
   }
 
   @keyframes color-change {
     0% {
-      color:rgb(240, 240, 240);
+      color: rgb(240, 240, 240);
     }
     50% {
       color: rgb(119, 119, 119);

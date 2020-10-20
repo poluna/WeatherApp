@@ -20,14 +20,17 @@
   }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 550px) {
   .forecastItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
   }
-  .wind {
+  .description {
+    width: 30%;
+  }
+  .days .wind {
     display: none;
   }
 }
