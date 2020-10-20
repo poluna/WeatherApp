@@ -3,7 +3,7 @@
   "author": "",
   "main": "js/main.js",
   "license": "MIT",
-  "homepage": "https://poluna.github.io/weatherapp",
+  "homepage": "https://poluna.github.io/WeatherApp",
   "scripts": {
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production --watch",
