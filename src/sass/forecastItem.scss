@@ -26,11 +26,12 @@
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
-  }
-  .description {
-    width: 30%;
-  }
-  .days .wind {
-    display: none;
+    padding: 8px;
+    .description {
+      width: 30%;
+    }
+    .wind {
+      display: none;
+    }
   }
 }

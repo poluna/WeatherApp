@@ -1,7 +1,6 @@
 #currentWeather {
   display: flex;
-  // height: 100vh;
-  height: 92vh;
+  height: 90vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -28,7 +27,7 @@
   .location {
     font-weight: 500;
   }
-
+  
   @keyframes color-change {
     0% {
       color: rgb(240, 240, 240);
