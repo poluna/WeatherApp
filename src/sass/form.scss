@@ -1,0 +1,36 @@
+#form {
+  position: absolute;
+  top: 60px;
+  z-index: 1;
+  right: 20px;
+  .search {
+    display: flex;
+  }
+  input {
+    width: 180px;
+    border: none;
+    background-color: rgba(219, 219, 219, 0.4);
+    border-radius: 10px 0 0 10px;
+    color: rgb(19, 19, 19);
+    font-size: 15px;
+    padding: 7px;
+  }
+  input::placeholder {
+    color: rgb(85, 85, 85);
+  }
+  input:focus,
+  button:focus {
+    outline: none;
+  }
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(83, 83, 83, 0.6);
+  }
+  button {
+    border: none;
+    border-radius: 0 10px 10px 0;
+    padding: 7px;
+    font-size: 18px;
+    background-color: rgba(83, 83, 83, 0.3);
+  }
+}

@@ -40,3 +40,15 @@
     }
   }
 }
+
+@media (max-height: 550px) {
+  #currentWeather {
+    font-size: 13px;
+    img {
+      width: 80px;
+    }
+    .description {
+      padding: 5px;
+    }
+  }
+}
