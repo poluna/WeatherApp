@@ -20,6 +20,11 @@
   }
 }
 
+.night {
+  color: rgb(245, 245, 245);
+  background-color: rgba(15, 30, 71, 0.712);
+}
+
 @media (max-width: 550px) {
   .forecastItem {
     display: flex;

@@ -25,13 +25,17 @@ class CurrentWeather {
       ".pressure p"
     ).innerHTML = `${data.main.pressure} hPa`;
     document.querySelector(".wind p").innerHTML = `${data.wind.speed} m/s`;
-    console.log(data.weather[0].icon[2]);
+    // console.log(data.weather[0].icon[2]);
     let backgroundColor, fontColor;
-    console.log(data.weather[0].icon[2] === "n");
+    // console.log(data.weather[0].icon[2] === "n");
     if (data.weather[0].icon[2] === "n") {
       backgroundColor =
         "linear-gradient(to right top, #091b36, #0a2953, #0b3972, #0d4892, #1358b3)";
       fontColor = "rgb(245, 245, 245)";
+      const elems = document.querySelectorAll(".forecastItem");
+      for (let i = 0; i < elems.length; i++) {
+        elems[i].classList.add("night");
+      }
     } else {
       backgroundColor =
         "linear-gradient(to right top, #265e89, #3981a9, #51a5c7, #6fcbe4, #91f1ff)";
