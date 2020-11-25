@@ -25,7 +25,18 @@ body {
     #6fcbe4,
     #91f1ff
   );
-  // background-image: url("../img/background.jpg");
-  // background-position: center;
-  // background-size: cover;
+}
+
+.day {
+  background-image: linear-gradient(to right top, #265e89, #3981a9, #51a5c7, #6fcbe4, #91f1ff);
+  .main-info {
+    color: rgb(0, 0, 0);
+  }
+}
+
+.night {
+  background-image: linear-gradient(to right top, #091b36, #0a2953, #0b3972, #0d4892, #1358b3);
+  .main-info {
+    color: rgb(245, 245, 245);
+  }
 }
