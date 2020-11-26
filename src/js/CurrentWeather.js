@@ -25,11 +25,9 @@ class CurrentWeather {
       ".pressure p"
     ).innerHTML = `${data.main.pressure} hPa`;
     document.querySelector(".wind p").innerHTML = `${data.wind.speed} m/s`;
-    if (data.weather[0].icon[2] === "n") {
-      document.querySelector("body").className = "night";
-    } else {
-      document.querySelector("body").className = "day";
-    }
+
+    const mode = data.weather[0].icon[2] === "n" ? "night" : "day";
+    document.querySelector("body").className = mode;
   }
 
   render() {
