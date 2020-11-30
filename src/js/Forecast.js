@@ -12,7 +12,6 @@ class Forecast {
   }
 
   static setForecast(data) {
-    console.log(data);
     let startDay = 0;
     for (let i = 0; i < data.list.length; i++) {
       if (data.list[i].dt_txt.split(" ")[1] === "12:00:00") {
@@ -45,6 +44,7 @@ class Forecast {
     document.querySelector("#root").appendChild(this.element);
     this.element.innerHTML = `
             <h1>Forecast</h1>
+            <h2>five day weather</h2>
             <div class="days"></div>
           `;
     const days = document.querySelector(".days");
